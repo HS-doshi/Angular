@@ -1,0 +1,11 @@
+<h3>Add - User</h3>
+<form [formGroup]="userform" (ngSubmit)="OnAddUser()">
+
+    <label> Name :
+        <input type="text" formControlName="name" />
+    </label>
+    <label> Email :
+        <input type="email" formControlName="email" />
+    </label>
+    <button type="submit">Add User</button>
+</form>
